@@ -3,7 +3,12 @@
 }
 body {
     margin: 0;
+    font-weight: 400;
+    color: #747474;
+    font-size: 16px;
 }
+
+/*Navbar Part*/
 header {
     position: fixed;
     top: 0;
@@ -12,8 +17,13 @@ header {
     padding: 15px 0;
 }
 .topbare {
-    margin-top: 10px;
-    margin: 0 10%;
+    max-width: 1050px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.main-nav {
+    padding: 0 20px;
 }
 .topbare a {
     display: inline-block;
@@ -26,10 +36,10 @@ header {
 
 }
 .float-right a:first-of-type {
-    color: green;
+    color: #00b39b;
 }
 .float-right a:nth-child(2), a:nth-child(3) {
-    color: gray;
+    color: #ababab;
 }
 .float-right a:nth-child(2) {
     margin: 0 1em ;
@@ -37,6 +47,47 @@ header {
 .float-right a:hover {
     color: green;
 }
-.first {
+
+/*First-Part*/
+.section_one {
     text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 1050px;
+    margin: 100px auto 0;
 }
+.part_one {
+    height: 290px;
+}
+.logo-title_one h1 {
+    font-size: 2.125rem;
+    color: #00b39b;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.part_one div:nth-child(2) {
+    width: 50%;
+    float: left;
+} 
+.part_one div:nth-child(3) {
+    width: 50%;
+    float: right;
+}
+.part_one .p_one p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0.8em 0;
+    line-height: 1.75;
+    font-weight: 400;
+    text-align: start;
+    padding: 0 20px;
+}
+.part_one div:nth-child(3) p {
+    padding: 0 45px 0 0;
+}
+
+/*Second Part*/
+.section_two {
+    margin: 3.75rem auto 2.5rem;
+    max-width: 1050px;
+}
+
