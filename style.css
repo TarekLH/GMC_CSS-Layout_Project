@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+.topbare {
+    margin-top: 10px;
+    margin: 0 10%;
+}
+.topbare a {
+    display: inline-block;
+    text-decoration: none;
+}
+.topbare .float-right {
+    float: right;
+    padding: 8px 0;
+    height: 33px;
+
+}
+.float-right a:first-of-type {
+    color: green;
+}
+.float-right a:nth-child(2), a:nth-child(3) {
+    color: gray;
+}
+.float-right a:nth-child(2) {
+    margin: 0 1em ;
+}
+.float-right a:hover {
+    color: green;
+}
+.first {
+    text-align: center;
+}
