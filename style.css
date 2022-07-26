@@ -4,6 +4,7 @@
 body {
     margin: 0;
     font-weight: 400;
+    font-family: 'Roboto',Arial,sans-serif;
     color: #747474;
     font-size: 16px;
 }
@@ -16,46 +17,46 @@ body {
 }
 
 
-/*Navbar Part*/
-header {
+/*Topbar Part*/
+.topbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 0;
     background: hsla(0,0%,100%,.98);
-    box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 15%);
+    /*transition: box-shadow .25s ease 0s;*/
+    box-shadow:  0 -2px 10px 0 rgb(0 0 0 / 15%);
+    z-index: 1;
 }
-.topbare {
-    max-width: 1050px;
+    
+.topbar-container {
+    max-width: 1015px;
+    padding: 0px 20px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
 }
-.main-nav {
-    padding: 0 35px;
+.topbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
-.topbare a {
-    display: inline-block;
-    text-decoration: none;
-}
-.topbare .float-right {
-    float: right;
-    padding: 8px 0;
-    height: 33px;
 
+.topbar-social {
+    float: right;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 70px;
 }
-.float-right a:first-of-type {
-    color: #00b39b;
-}
-.float-right a:nth-child(2), a:nth-child(3) {
+.topbar-social a {
+    display: inline-block;
+    padding: 0 9px;
     color: #ababab;
+    text-decoration: none;
+    transition: color .3s ease 0s;
 }
-.float-right a:nth-child(2) {
-    margin: 0 1em ;
-}
-.float-right a:hover {
-    color: green;
+.topbar-social a:hover,
+.topbar-social a.active {
+    color: #00b39b;
 }
 
 /*First-Part*/
@@ -71,8 +72,9 @@ header {
 .logo-title_one h1 {
     font-size: 2.125rem;
     color: #00b39b;
-    font-weight: 400;
     margin: 1em 0;
+    font-weight: 300;
+    letter-spacing: -.3px;
 }
 
 .part_one div:nth-child(2) {
