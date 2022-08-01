@@ -238,6 +238,7 @@ body {
     padding: 10px;
     float: left;
     margin-top: 2em;
+    position: relative;
 }
 .stats-head h1 {
     margin: 0;
@@ -254,6 +255,17 @@ body {
     line-height: 1.7142857143;
     margin: 22.4px 0;
 }
+.stats-head::after {
+    content: "";
+    position: absolute;
+    right: 35%;
+    top: 108%;
+    background: url(imgs/logo.png) no-repeat;
+    width: 456px;
+    height: 435px;
+    pointer-events: none;
+}
+
 .stats-grid-cards {
     width: 50%;
     float: left;
@@ -292,4 +304,94 @@ body {
 }
 .buble p {
     margin: 0;
+}
+
+
+/*Fifth Part*/
+.offices-header {
+    max-width: 460px;
+    margin: 0 auto 4.1875rem;
+    font-size: .875em;
+    text-align: center;
+}
+.offices-header h1 {
+    font-size: 2.1428571429em;
+    margin: 0;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    color: #00b39b;
+}
+.offices-header p {
+    line-height: 1.7142857143;
+    margin: 1.6em 0;
+}
+
+.slids {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.slids .office a {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+    z-index: 2;
+    position: relative;
+    display: block;
+    color: #747474;
+    text-decoration: none;
+}
+.office figure {
+    margin: 0;
+}
+.office img {
+    max-width: 100%;
+    height: auto;
+}
+.office-desc {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.6666666667;
+    padding: 1.1111111111em;
+}
+.btn {
+    float: right;
+    font-size: 10px;
+    padding: 1em 1.5em;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #3d83df;
+    font-family: 'Roboto',Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*Join-us Part*/
+.joinus {
+    margin: 5rem auto;
+}
+.joinus-head {
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: .875em;
+    text-align: center;
+}
+.joinus-head h1 {
+    font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: 0.75em;
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
 }
