@@ -20,6 +20,14 @@ body {
 }
 
 
+@media only screen and (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+}
+
+
+
 /*Topbar Part*/
 .topbar {
     position: fixed;
@@ -62,6 +70,28 @@ body {
     color: #00b39b;
 }
 
+
+@media only screen and (max-width: 500px) {
+    .topbar {
+        position: unset;
+    }
+    .topbar-nav {
+        display: block;
+        height: auto;
+        padding: 10px;
+    }
+    .topbar-nav a {
+        display: inline-block;
+        line-height: 44px;
+    }
+    .topbar-social {
+        float: none;
+        text-align: right;
+        line-height: 44px;
+    }
+}
+
+
 /*First-Part*/
 .part_one {
     text-align: center;
@@ -98,6 +128,20 @@ body {
 .part_one div:nth-child(3) p {
     padding: 0 5px;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .part_one {
+        height: auto;
+    }
+    .part_one div:nth-child(2),
+    .part_one div:nth-child(3) {
+        width: auto; 
+        float: none;
+        padding: 10px 0;
+    } 
+}
+
 
 /*Second Part*/
 .part_two {
@@ -244,6 +288,17 @@ body {
 }
 
 
+@media only screen and (max-width: 500px) {
+    .part_two {
+        display: block;
+    }
+    .green, .blue, .dark-blue {
+        width: auto;
+        margin: 20px 0;
+    }
+}
+
+
 /*Third Part*/
 .part_three {
     margin: 40px 0 50px;
@@ -296,6 +351,22 @@ body {
     opacity: 1;
 }
 
+
+@media only screen and (max-width: 500px) {
+    .part_three {
+        text-align: center;
+    }
+    .part_three h1 {
+        float: none;
+        width: auto;
+    }
+    .part_three .brands-logos {
+        width: auto;
+        justify-content: space-around;
+    }
+}
+
+
 /*Fourth Part*/
 .stats {
     background: #e5faf8;
@@ -343,7 +414,6 @@ body {
 
 .stats-grid-cards {
     width: 50%;
-    float: left;
     padding: 10px;
     display: grid;
     grid-template-columns: 228.7px 228.7px;
@@ -412,6 +482,21 @@ body {
 }
 .buble p {
     margin: 0;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .stats {
+        height: auto;
+    }
+    .stats-head {
+        width: auto;
+        text-align: center;
+    }
+    .stats-grid-cards {
+        width: 100%;
+        grid-template-columns: none;
+    }
 }
 
 
@@ -495,6 +580,14 @@ body {
     text-transform: uppercase;
     transition: all .2s ease 0s;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .slids {
+        justify-content: center;
+    }
+}
+
 
 /*Join-us Part*/
 .joinus {
